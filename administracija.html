@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <a href="index.php">Home</a>
+            <a href="kategorija.php?kategorija=Procesori">Procesori</a>
+            <a href="kategorija.php?kategorija=Graficke kartice">Graficke kartice</a>
+            <a href="kategorija.php?kategorija=Maticne ploce">Maticne ploce</a>
+            <a href="kategorija.php?kategorija=Napajanja">Napajanja</a>
+            <a href="kategorija.php?kategorija=Pohrana podataka">Pohrana podataka</a>
+            <a href="unos.php">Unos vijesti</a>
+            <a href="administrator.php">Administracija</a>
+        </nav>
+
+        <h1>PC Komponente News</h1>
+    </header>
+
+    <main class="admin-page">
+        <section class="admin-box">
+            <h2>Administracija</h2>
+            <p class="admin-intro">Ovo je jednostavan administracijski dio stranice. Za sada sluzi za pristup unosu nove vijesti, a kasnije se moze prosiriti za bazu podataka i upravljanje objavama.</p>
+
+            <div class="admin-grid">
+                <article class="admin-card">
+                    <h3>Unos nove vijesti</h3>
+                    <p>Forma za unos naslova, sazetka, teksta, kategorije i slike vijesti.</p>
+                    <a href="unos.php">Otvori unos</a>
+                </article>
+
+                <article class="admin-card">
+                    <h3>Pregled vijesti</h3>
+                    <p>Ovaj dio je priprema za kasniju fazu kada se vijesti budu spremale u bazu.</p>
+                    <span>Dolazi kasnije</span>
+                </article>
+
+                <article class="admin-card">
+                    <h3>Baza podataka</h3>
+                    <p>Mjesto za buduce povezivanje projekta s MySQL bazom preko XAMPP-a.</p>
+                    <span>Dolazi kasnije</span>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>PC Komponente News</h2>
+        <p>Autor: Tarik Taletovic | E-mail: ttaletovi@tvz.hr | JMBAG: 0246122685 | 2026.</p>
+    </footer>
+</body>
+</html>
+

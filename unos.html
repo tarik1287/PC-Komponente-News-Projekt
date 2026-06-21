@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unos vijesti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <a href="index.php">Home</a>
+            <a href="kategorija.php?kategorija=Procesori">Procesori</a>
+            <a href="kategorija.php?kategorija=Graficke kartice">Graficke kartice</a>
+            <a href="kategorija.php?kategorija=Maticne ploce">Maticne ploce</a>
+            <a href="kategorija.php?kategorija=Napajanja">Napajanja</a>
+            <a href="kategorija.php?kategorija=Pohrana podataka">Pohrana podataka</a>
+            <a href="unos.php">Unos vijesti</a>
+            <a href="administrator.php">Administracija</a>
+        </nav>
+
+        <h1>PC Komponente News</h1>
+    </header>
+
+    <main class="form-page">
+        <section class="form-box">
+            <h2>Unos nove vijesti</h2>
+
+            <form name="unos_vijesti" action="skripta.php" method="POST" enctype="multipart/form-data">
+                <div class="form-item">
+                    <label for="title">Naslov vijesti</label>
+                    <input type="text" id="title" name="title" required autofocus>
+                </div>
+
+                <div class="form-item">
+                    <label for="about">Kratki sazetak vijesti</label>
+                    <textarea id="about" name="about" rows="5" required></textarea>
+                </div>
+
+                <div class="form-item">
+                    <label for="content">Tekst vijesti</label>
+                    <textarea id="content" name="content" rows="10" required></textarea>
+                </div>
+
+                <div class="form-item">
+                    <label for="category">Kategorija vijesti</label>
+                    <select id="category" name="category" required>
+                        <option value="Procesori">Procesori</option>
+                        <option value="Graficke kartice">Graficke kartice</option>
+                        <option value="Maticne ploce">Maticne ploce</option>
+                        <option value="Napajanja">Napajanja</option>
+                        <option value="Pohrana podataka">Pohrana podataka</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="pphoto">Slika vijesti</label>
+                    <input type="file" id="pphoto" name="pphoto" accept="image/jpeg,image/png,image/gif,image/webp">
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" id="prikaz" name="prikaz" value="da" checked>
+                    <label for="prikaz">Prikazi vijest na stranici</label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset">Ponisti</button>
+                    <button type="submit">Prihvati</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h2>PC Komponente News</h2>
+        <p>Autor: Tarik Taletovic | E-mail: ttaletovi@tvz.hr | JMBAG: 0246122685 | 2026.</p>
+    </footer>
+</body>
+</html>
+
+
