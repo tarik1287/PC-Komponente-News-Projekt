@@ -1,14 +1,17 @@
 # PC Komponente News
 
-Projekt za kolegij Programiranje web aplikacija.
+Projekt za kolegij **Programiranje web aplikacija**.
 
 ## Pokretanje
 
-1. Folder projekta treba biti u:
+1. Kopirati folder **PC Komponente News Projekt** u XAMPP `htdocs` mapu.
 
-   `C:\xampp\htdocs\Projekt0246122685`
+   Primjer putanje:
 
-2. U XAMPP-u pokrenuti:
+   `C:\xampp\htdocs\PC Komponente News Projekt`
+
+2. U XAMPP Control Panelu pokrenuti:
+
    - Apache
    - MySQL
 
@@ -18,21 +21,27 @@ Projekt za kolegij Programiranje web aplikacija.
 
 4. Importati bazu iz datoteke:
 
-   `Projekt\projekt0246122685.sql`
+   `projekt0246122685.sql`
 
 5. Otvoriti projekt:
 
-   `http://localhost/Projekt0246122685/Projekt/index.php`
+   `http://localhost/PC%20Komponente%20News%20Projekt/index.php`
 
-## Admin prijava
+## Admin pristup
+
+Stranica za prijavu:
+
+`http://localhost/PC%20Komponente%20News%20Projekt/login.php`
+
+Podaci za administratora:
 
 - Korisničko ime: `admin`
 - Lozinka: `admin123`
 
-Admin stranica:
+Administracijska stranica:
 
-`http://localhost/Projekt0246122685/Projekt/administrator.php`
+`http://localhost/PC%20Komponente%20News%20Projekt/administrator.php`
 
 ## Napomena
 
-Završna verzija projekta koristi PHP stranice. HTML datoteke su ostavljene kao dio ranijih faza projekta.
+Završna verzija projekta koristi PHP stranice i MySQL bazu. HTML datoteke su ostavljene u projektu kao dio ranijih faza.
